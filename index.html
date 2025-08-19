@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <div class="option">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </div>
+                </div>
+                <div class="nav-option">
+                    <div class="option">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">Search</a>
+                    </div>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="library-options nav-option">
+                        <img src="./assets/library_icon.png" alt="library" >
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to folllow</p>
+                        <p class="box-p2">We'll keeo you updated on new episodes</p>
+                        <button class="badge">Browse podcast</button>
+                    </div>
+                    <div class="box2">
+                        <div class="features">
+                            <p>Legal</p>
+                            <p>Safety & Privacy Center</p>
+                            <p>Privacy Policy</p>
+                            <p>Cookies</p>
+                            <p>About Adds</p>
+                            <p>Accessibility</p>
+                        </div>
+                        <button><i class="fa-solid fa-globe"></i>English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <i class="fa-solid fa-bars"></i>
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore primium</button>
+                    <button class="badge nav-item dark-badge "><i class="fa-regular fa-circle-down" style="margin-right: 0.25rem;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+
+            <h2>Recently played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img" src="./assets/card1img.jpeg" >
+                    <p class="card-tile">Top 50 Global<i class="fa-regular fa-circle-play"></i></p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img" src="./assets/card2img.jpeg" >
+                    <p class="card-tile">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/hanuman.webp" >
+                    <p class="card-tile"> Shree Hanuman Chalisa</p>
+                    <p class="card-info">Hariharan</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card4img.jpeg" >
+                    <p class="card-tile">South Indian Hits</p>
+                    <p class="card-info">Trending songs from the tollywood...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card3img.jpeg" >
+                    <p class="card-tile">Mere pass tum ho</p>
+                    <p class="card-info">Old songs vintage memories grouped...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/pun.jpg" >
+                    <p class="card-tile">Ultimate Punjabi Hits</p>
+                    <p class="card-info">-With Pramish Verma</p>
+                </div>
+            </div>
+            
+            <h2>Popular Artist</h2>
+            <div class="card-container" id="artist">
+                <div class="card">
+                    <img class="card-img" src="./assets/pritam.jpg" >
+                    <p class="card-tile">Pritam</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/arijit.jpg" >
+                    <p class="card-tile"> Arijit Singh</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/rehman.jpg" >
+                    <p class="card-tile">A. R. Rehman</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/udit.jpg" >
+                    <p class="card-tile">Udit Narayan</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/atif.jpg" >
+                    <p class="card-tile">Atif Aslam</p>
+                    <p class="card-info">Artist</p>
+                </div>
+            </div>
+
+            <h2>Featured charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img" src="./assets/card5img.jpeg" >
+                    <p class="card-tile">Top songs Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card6img.jpeg" >
+                    <p class="card-tile">Top songs India</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/card1img.jpeg" >
+                    <p class="card-tile">Top 50 Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                 <div class="card">
+                    <img class="card-img" src="./assets/region_in_default.jpg" >
+                    <p class="card-tile">Top 50 India</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./assets/region_global_default.jpg" >
+                    <p class="card-tile">Viral 50 Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="line"></div>
+                <div class="explore">
+                    <div class="column">
+                        <p class="head">Company</p>
+                        <p>About</p>
+                        <p>Jobs</p>
+                        <p>For The Record</p>
+                    </div>
+                    <div class="column">
+                        <p class="head">Communities</p>
+                        <p>Developer</p>
+                        <p>For Artist</p>
+                        <p>Investors</p>
+                        <p>Vendors</p>
+                    </div>
+                    <div class="column">
+                        <p class="head">Usefull links</p>
+                        <p>Support</p>
+                        <p>Free mobile app</p>
+                    </div>
+                    <div class="column">
+                        <p class="head">Spotify Plans</p>
+                        <p>primium individual</p>
+                        <p>primium duo</p>
+                        <p>primium family</p>
+                        <p>primium students</p>
+                        <p>spotify free</p>
+                    </div>
+                    <div class="social">
+                        <div class="socialicon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="socialicon"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="socialicon"><i class="fa-brands fa-facebook"></i></div>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="end">
+                @2025 spotify AB
+            </div>
+        </div>    
+    </div>
+    <div class="music-player">
+        <div class="album-player">
+            <img src="./pl-assets/album_picture.jpeg">
+            <div class="album-info">
+                <div class="album-name">Daylight</div>
+                <div class="singer">David Kusher</div>
+            </div>
+            <img class="albumicon" id="heart" src="./pl-assets/album_icon1.png">
+            <img class="albumicon" src="./pl-assets/album_icon2.png">
+        </div>
+        <div class="player">
+            <div class="player-controls">
+                <img src="./assets/player_icon1.png" class="player-control-icon">
+                <img src="./assets/player_icon2.png" class="player-control-icon">
+                <img src="./assets/player_icon3.png" id="pause" class="player-control-icon">
+                <img src="./assets/player_icon4.png" class="player-control-icon">
+                <img src="./assets/player_icon5.png" class="player-control-icon">
+            </div>
+            <div class="playback-bar">
+                <span class="currtime">0:00</span>
+                <input type="range" min="0" max="100" class="progress-bar" step="1">
+                <span class="totaltime">3:33</span>
+            </div>
+        </div>
+        <div class="control-icon">
+            <img id="one" src="./pl-assets/controls_icon1.png">
+            <img id="two" src="./pl-assets/controld_icon2.png">
+            <img id="three" src="./pl-assets/controls_icon3.png">
+            <img id="four" src="./pl-assets/controls_icon4.png">
+            <img id="five" src="./pl-assets/controls_icon5.png">
+            <input type="range">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
